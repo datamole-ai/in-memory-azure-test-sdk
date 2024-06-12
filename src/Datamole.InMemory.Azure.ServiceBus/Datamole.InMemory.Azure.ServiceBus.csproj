@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <Description>In-memory implementation of the Azure Service Bus clients for convenient testing.</Description>
+        <PackageTags>$(PackageTags);ServiceBus;InMemory</PackageTags>
+        <IsPackable>true</IsPackable>
+        <PackageReadmeFile>../../docs/service-bus.md</PackageReadmeFile>
+        <RootNamespace>Datamole.InMemory.Azure.ServiceBus</RootNamespace>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+
+    <ItemGroup>
+        <PackageReference Include="Azure.Messaging.ServiceBus" />
+        <PackageReference Include="FluentAssertions" />
+    </ItemGroup>
+
+</Project>

@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <Description>In-memory implementation of the Azure Storage Blobs and Tables clients for convenient testing.</Description>
+        <PackageTags>$(PackageTags);Storage;Blobs;Tables;InMemory</PackageTags>
+        <IsPackable>true</IsPackable>
+        <PackageReadmeFile>../../docs/storage.md</PackageReadmeFile>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Azure.Storage.Blobs" />
+        <PackageReference Include="Azure.Data.Tables" />
+        <PackageReference Include="FluentAssertions" />
+        <PackageReference Include="Microsoft.AspNetCore.OData" />
+        <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Datamole.InMemory.Azure\Datamole.InMemory.Azure.csproj" />
+        
+        <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleToAttribute">
+            <_Parameter1>Tests</_Parameter1>
+        </AssemblyAttribute>
+    </ItemGroup>
+</Project>
