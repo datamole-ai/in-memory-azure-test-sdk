@@ -1,3 +1,6 @@
+> [!NOTE]
+> This repository has been discontinued. The Device SDK now being developed in the [spotflow-io/in-memory-azure-test-sdk](https://github.com/spotflow-io/in-memory-azure-test-sdk) repository.
+
 ![](HeroImage.jpg)
 
 <h1 align="center">Azure In-Memory SDKs for Testing</h1>
